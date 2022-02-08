@@ -1,5 +1,6 @@
 // dependencies
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { render, screen, cleanup } from '@testing-library/react';
 // local files
 import Button from '../Button';
@@ -19,5 +20,9 @@ describe('Button Component renders correctly', () => {
   });
   test('have proper Button text', () => {
     expect(buttonElement).toHaveTextContent(buttonText);
+  });
+  test('matches snapshot', () => {
+    const tree = renderer.create(<Button buttonText={buttonText} />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
