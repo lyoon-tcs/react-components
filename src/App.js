@@ -1,4 +1,6 @@
+// dependencies
 import React from 'react';
+// local files
 
 const App = () => {
   return (
