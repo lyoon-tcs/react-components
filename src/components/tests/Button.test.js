@@ -1,12 +1,23 @@
 // dependencies
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 // local files
 import Button from '../Button';
 
-test('renders Button', () => {
-  render(<Button />);
+afterEach(() => {
+  cleanup();
+});
+
+describe('Button Component renders correctly', () => {
+  const buttonText = 'hello world';
+  render(<Button buttonText={buttonText} />);
   screen.debug();
-  const button = document.getElementsByTagName('button');
-  console.log('BUTTON:', button);
+  const buttonElement = screen.getByTestId(buttonText);
+
+  test('should render button correctly, through data-testid', () => {
+    expect(buttonElement).toBeInTheDocument();
+  });
+  test('have proper Button text', () => {
+    expect(buttonElement).toHaveTextContent(buttonText);
+  });
 });

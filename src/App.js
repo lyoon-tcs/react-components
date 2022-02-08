@@ -11,6 +11,7 @@ const App = () => {
       </a>
       <div className="buttons">
         <Button buttonText="Click me!"></Button>
+        <Button buttonText="Dude"></Button>
       </div>
     </main>
   );
