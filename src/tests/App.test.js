@@ -7,6 +7,6 @@ import App from '../App';
 test('renders Lawrence Link', () => {
   render(<App />);
   screen.debug();
-  const linkElement = screen.getByText(/Lawrence Yoon/i);
+  const linkElement = screen.getByText('Lawrence Yoon');
   expect(linkElement).toBeInTheDocument();
 });
