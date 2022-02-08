@@ -13,7 +13,7 @@ describe('Button Component renders correctly', () => {
   const buttonText = 'hello world';
   render(<Button buttonText={buttonText} />);
   screen.debug();
-  const buttonElement = screen.getByTestId(buttonText);
+  const buttonElement = screen.getByText(buttonText);
 
   test('should render button correctly, through data-testid', () => {
     expect(buttonElement).toBeInTheDocument();
