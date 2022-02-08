@@ -15,11 +15,8 @@ describe('Button Component renders correctly', () => {
   screen.debug();
   const buttonElement = screen.getByText(buttonText);
 
-  test('should render button correctly, through data-testid', () => {
+  test('should render button with proper text', () => {
     expect(buttonElement).toBeInTheDocument();
-  });
-  test('have proper Button text', () => {
-    expect(buttonElement).toHaveTextContent(buttonText);
   });
   test('matches snapshot', () => {
     const tree = renderer.create(<Button buttonText={buttonText} />).toJSON();
