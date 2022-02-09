@@ -20,11 +20,13 @@ afterEach(() => {
 
 describe('Button Component renders correctly', () => {
   const buttonText = 'hello world';
+
   test('should render button with proper text', () => {
     render(<Button buttonText={buttonText} />);
     const buttonElement = screen.getByText(buttonText);
     expect(buttonElement).toBeInTheDocument();
   });
+
   test('matches snapshot', () => {
     const tree = renderer.create(<Button buttonText={buttonText} />).toJSON();
     expect(tree).toMatchSnapshot();
