@@ -20,10 +20,9 @@ afterEach(() => {
 
 describe('Button Component renders correctly', () => {
   const buttonText = 'hello world';
-  render(<Button buttonText={buttonText} />);
-  const buttonElement = screen.getByText(buttonText);
-
   test('should render button with proper text', () => {
+    render(<Button buttonText={buttonText} />);
+    const buttonElement = screen.getByText(buttonText);
     expect(buttonElement).toBeInTheDocument();
   });
   test('matches snapshot', () => {
