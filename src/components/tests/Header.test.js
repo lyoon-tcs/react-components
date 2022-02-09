@@ -6,3 +6,17 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
+
+// dependencies
+import React from 'react';
+import renderer from 'react-test-renderer';
+// import { render, screen, cleanup } from '@testing-library/react';
+// local files
+import Header from '../Header';
+
+describe('Header Component renders correctly', () => {
+  test('matches snapshot', () => {
+    const tree = renderer.create(<Header title={'Hello world'} />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
