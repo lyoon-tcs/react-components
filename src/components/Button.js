@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 
 /**
  * @description - returns Button component
- * @param {string} props.buttonText - buttonText string passed from parent to use button's text
+ * @param {string} props.buttonText - the button's text
  * @return {jsx} - the Button component to render
  */
 const Button = (props) => {
