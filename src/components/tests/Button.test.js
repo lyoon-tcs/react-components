@@ -21,7 +21,6 @@ afterEach(() => {
 describe('Button Component renders correctly', () => {
   const buttonText = 'hello world';
   render(<Button buttonText={buttonText} />);
-  screen.debug();
   const buttonElement = screen.getByText(buttonText);
 
   test('should render button with proper text', () => {
