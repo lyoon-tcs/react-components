@@ -1,8 +1,8 @@
 // dependencies
 import React from 'react';
 
-const Header = () => {
-  return <h1 className="Header"></h1>;
+const Header = (props) => {
+  return <h1 className="Header">{props.title}</h1>;
 };
 
 export default Header;
