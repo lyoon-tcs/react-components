@@ -1,9 +1,12 @@
+// dependencies
 import React from 'react';
+// local files
+import Header from './components/Header';
 
 const App = () => {
   return (
     <main className="App">
-      <h1>Learning Jest + React</h1>
+      <Header title="Welcome!" />
     </main>
   );
 };
