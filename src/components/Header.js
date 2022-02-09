@@ -11,6 +11,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * @description - returns Header component
+ * @param {string} props.title - the header's text
+ * @return {jsx} - the Header component to render
+ */
 const Header = (props) => {
   return <h1 className="Header">{props.title}</h1>;
 };
