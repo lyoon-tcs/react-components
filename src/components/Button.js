@@ -9,13 +9,19 @@
 
 // dependencies
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-// local files
-import App from '../App';
+import PropTypes from 'prop-types';
 
-test('renders h1', () => {
-  render(<App />);
-  screen.debug();
-  const linkElement = screen.getByText('Lawrence Yoon');
-  expect(linkElement).toBeInTheDocument();
-});
+/**
+ * @description - returns Button component
+ * @param {string} props.buttonText - the button's text
+ * @return {jsx} - the Button component to render
+ */
+const Button = (props) => {
+  return <button>{props.buttonText}</button>;
+};
+
+Button.propTypes = {
+  buttonText: PropTypes.string
+};
+
+export default Button;
