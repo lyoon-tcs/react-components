@@ -9,9 +9,19 @@
 
 // dependencies
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
-ReactDOM.render(
-  <React.StrictMode></React.StrictMode>,
-  document.getElementById('root')
-);
+/**
+ * @description - returns Header component
+ * @param {string} props.title - the header's text
+ * @return {jsx} - the Header component to render
+ */
+const Header = (props) => {
+  return <h1 className="Header">{props.title}</h1>;
+};
+
+Header.propTypes = {
+  title: PropTypes.string
+};
+
+export default Header;
