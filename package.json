@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -s public",
+    "build": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "npx eslint --fix",
