@@ -19,10 +19,10 @@ import styles from './Button.module.css';
  * @param {string} props.backgroundColor - the button's background color
  * @return {jsx} - the Button component to render
  */
-const Button = ({ buttonText, backgroundColor, handleClick }) => {
+const Button = ({ buttonText, backgroundColor, handleClick, size }) => {
   return (
     <button
-      className={styles.button}
+      className={`${styles.button} ${styles[size]}`}
       style={{ backgroundColor: backgroundColor }}
       onClick={handleClick}
     >

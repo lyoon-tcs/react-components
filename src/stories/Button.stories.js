@@ -16,7 +16,11 @@ export default {
   title: 'Buttons',
   component: Button,
   argTypes: {
-    handleClick: { action: 'Handle Click' }
+    handleClick: { action: 'Handle Click' },
+    size: {
+      control: { type: 'radio' },
+      options: ['sm', 'md', 'lg']
+    }
   }
 };
 
@@ -27,11 +31,13 @@ const Template = (args) => {
 export const Green = Template.bind({});
 Green.args = {
   buttonText: 'Hello',
-  backgroundColor: 'purple'
+  backgroundColor: 'green',
+  size: 'md'
 };
 
 export const Red = Template.bind({});
 Red.args = {
   buttonText: 'Red btn',
-  backgroundColor: 'red'
+  backgroundColor: 'red',
+  size: 'sm'
 };
