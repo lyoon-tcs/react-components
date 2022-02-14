@@ -17,6 +17,7 @@ import styles from './Button.module.css';
  * @description - returns Button component
  * @param {string} props.buttonText - the button's text
  * @param {string} props.backgroundColor - the button's background color
+ * @param {string} props.size - the button's size (extra padding & font-size)
  * @return {jsx} - the Button component to render
  */
 const Button = ({ buttonText, backgroundColor, handleClick, size }) => {

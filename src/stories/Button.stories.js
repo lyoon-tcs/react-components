@@ -30,14 +30,14 @@ const Template = (args) => {
 
 export const Green = Template.bind({});
 Green.args = {
-  buttonText: 'Hello',
+  buttonText: 'Green',
   backgroundColor: 'green',
   size: 'md'
 };
 
 export const Red = Template.bind({});
 Red.args = {
-  buttonText: 'Red btn',
+  buttonText: 'Red',
   backgroundColor: 'red',
   size: 'sm'
 };
