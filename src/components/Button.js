@@ -18,9 +18,15 @@ import styles from './Button.module.css';
  * @param {string} props.buttonText - the button's text
  * @return {jsx} - the Button component to render
  */
-const Button = ({ buttonText = 'TEXT', backgroundColor = 'green' }) => {
-  console.log(styles);
-  return <button className={`${styles[backgroundColor]}`}>{buttonText}</button>;
+const Button = ({ buttonText, backgroundColor }) => {
+  return (
+    <button
+      className={styles.button}
+      style={{ backgroundColor: backgroundColor }}
+    >
+      {buttonText}
+    </button>
+  );
 };
 
 Button.propTypes = {

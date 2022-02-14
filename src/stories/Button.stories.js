@@ -13,14 +13,17 @@ import React from 'react';
 import Button from '../components/Button';
 
 export default {
-  title: 'First Button!',
+  title: 'Buttons',
   component: Button
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => {
+  return <Button {...args} />;
+};
 
 export const Green = Template.bind({});
+
 Green.args = {
-  backgroundColor: 'green',
-  buttonText: 'HELLO'
+  buttonText: 'Hello',
+  backgroundColor: 'purple'
 };
