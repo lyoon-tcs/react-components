@@ -13,7 +13,7 @@ import React from 'react';
 import Header from '../components/Button';
 
 export default {
-  title: 'Header',
+  title: 'Components/Header',
   component: Header
 };
 
