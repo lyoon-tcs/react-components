@@ -20,11 +20,11 @@ import styles from './Button.module.css';
  * @param {string} props.size - the button's size (extra padding & font-size)
  * @return {jsx} - the Button component to render
  */
-const Button = ({ buttonText, backgroundColor, handleClick, size }) => {
+const Button = ({ buttonText, backgroundColor, color, size, handleClick }) => {
   return (
     <button
       className={`${styles.button} ${styles[size]}`}
-      style={{ backgroundColor: backgroundColor }}
+      style={{ backgroundColor, color }}
       onClick={handleClick}
     >
       {buttonText}
@@ -35,6 +35,7 @@ const Button = ({ buttonText, backgroundColor, handleClick, size }) => {
 Button.propTypes = {
   buttonText: PropTypes.string,
   backgroundColor: PropTypes.string,
+  color: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   handleClick: PropTypes.func
 };
