@@ -4,11 +4,11 @@ import React from 'react';
 import LearnStorybook from './LearnStorybook';
 
 export default {
-  title: 'Learn Storybook - WE EXPERIMENTING',
+  title: 'WE LEARNING STORYBOOK!',
   component: LearnStorybook
 };
 
-const Template = (args) => <LearnStorybook {...args} />;
+const Template = () => <LearnStorybook />;
 
 export const Default = Template.bind({});
 
