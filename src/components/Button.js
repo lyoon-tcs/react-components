@@ -22,7 +22,7 @@ import styles from './Button.module.css';
  * @return {jsx} - the Button component to render
  */
 const Button = ({
-  buttonText = 'btn',
+  buttonText = 'HEY',
   backgroundColor = 'green',
   color = '#f2ff40',
   size = 'sm',

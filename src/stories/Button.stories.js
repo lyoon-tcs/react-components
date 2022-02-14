@@ -24,9 +24,7 @@ export default {
   }
 };
 
-const Template = (args) => {
-  return <Button {...args} />;
-};
+const Template = (args) => <Button {...args} />;
 
 export const Green = Template.bind({});
 Green.args = {

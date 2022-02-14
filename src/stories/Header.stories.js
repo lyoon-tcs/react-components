@@ -11,3 +11,12 @@
 import React from 'react';
 // local files
 import Header from '../components/Button';
+
+export default {
+  title: 'Header',
+  component: Header
+};
+
+const Template = (args) => <Header {...args} />;
+
+export const Small = Template.bind({});
