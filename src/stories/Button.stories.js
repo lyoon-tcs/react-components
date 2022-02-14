@@ -8,20 +8,17 @@
  */
 
 // dependencies
+import React from 'react';
 // local files
-// import PropTypes from 'prop-types';
+import Button from '../components/Button';
 
-/**
- * @description - returns Button component
- * @param {string} props.buttonText - the button's text
- * @return {jsx} - the Button component to render
- */
-const Button = (props) => {
-  return <button>{props.buttonText}</button>;
+export default {
+  title: 'First Button!',
+  component: Button
 };
 
-// Button.propTypes = {
-//   buttonText: PropTypes.string
-// };
-
-export default Button;
+export const Green = () => (
+  <Button label="CLICK" backgroundColor="green">
+    Dude
+  </Button>
+);
