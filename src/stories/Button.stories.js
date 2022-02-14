@@ -17,4 +17,10 @@ export default {
   component: Button
 };
 
-export const Green = () => <Button buttonText="DUDE" />;
+const Template = (args) => <Button {...args} />;
+
+export const Green = Template.bind({});
+Green.args = {
+  backgroundColor: 'green',
+  buttonText: 'HELLO'
+};
