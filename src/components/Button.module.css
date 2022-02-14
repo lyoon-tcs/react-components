@@ -4,15 +4,15 @@
 }
 
 .sm {
-  padding: 7px;
+  padding: 0.4375em;
 }
 
 .md {
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 0.53125rem 0.5625rem;
+  font-size: 1.0625rem;
 }
 
 .lg {
-  padding: 13px 17px;
-  font-size: 20px;
+  padding: 0.625em 0.9375em;
+  font-size: 1.125rem;
 }
