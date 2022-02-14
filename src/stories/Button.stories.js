@@ -17,8 +17,4 @@ export default {
   component: Button
 };
 
-export const Green = () => (
-  <Button label="CLICK" backgroundColor="green">
-    Dude
-  </Button>
-);
+export const Green = () => <Button buttonText="DUDE" />;
