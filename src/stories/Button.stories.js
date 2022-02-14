@@ -13,7 +13,7 @@ import React from 'react';
 import Button from '../components/Button';
 
 export default {
-  title: 'Buttons',
+  title: 'Components/Buttons',
   component: Button,
   argTypes: {
     size: {
