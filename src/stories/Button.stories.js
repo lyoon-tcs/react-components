@@ -32,6 +32,7 @@ export const Green = Template.bind({});
 Green.args = {
   buttonText: 'Green',
   backgroundColor: 'green',
+  color: '#f2ff40',
   size: 'md'
 };
 
@@ -39,6 +40,7 @@ export const Red = Template.bind({});
 Red.args = {
   buttonText: 'Red',
   backgroundColor: 'red',
+  color: '#403535',
   size: 'md'
 };
 
@@ -46,6 +48,7 @@ export const Small = Template.bind({});
 Small.args = {
   buttonText: 'Small',
   backgroundColor: 'green',
+  color: '#f2ff40',
   size: 'sm'
 };
 
@@ -53,6 +56,7 @@ export const Medium = Template.bind({});
 Medium.args = {
   buttonText: 'Medium',
   backgroundColor: 'green',
+  color: '#f2ff40',
   size: 'md'
 };
 
@@ -60,5 +64,6 @@ export const Large = Template.bind({});
 Large.args = {
   buttonText: 'Large',
   backgroundColor: 'green',
+  color: '#f2ff40',
   size: 'lg'
 };
