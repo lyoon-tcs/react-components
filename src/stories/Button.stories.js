@@ -16,11 +16,11 @@ export default {
   title: 'Buttons',
   component: Button,
   argTypes: {
-    handleClick: { action: 'Handle Click' },
     size: {
       control: { type: 'radio' },
       options: ['sm', 'md', 'lg']
-    }
+    },
+    handleClick: { action: 'Handle Click' }
   }
 };
 
