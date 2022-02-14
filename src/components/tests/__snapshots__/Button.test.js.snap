@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Component renders correctly matches snapshot 1`] = `
-<button>
+<button
+  className="button sm"
+  style={
+    Object {
+      "backgroundColor": "green",
+      "color": "#f2ff40",
+    }
+  }
+>
   hello world
 </button>
 `;
