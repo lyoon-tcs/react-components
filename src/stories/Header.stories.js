@@ -19,4 +19,6 @@ export default {
 
 const Template = (args) => <Header {...args} />;
 
+// work on finding difference between adding a default header here, and default header in actual Header.js (in props).
+// Finish creating multiple instances, try out different props
 export const asdf = Template.bind({});
