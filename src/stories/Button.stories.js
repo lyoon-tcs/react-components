@@ -14,7 +14,10 @@ import Button from '../components/Button';
 
 export default {
   title: 'Buttons',
-  component: Button
+  component: Button,
+  argTypes: {
+    handleClick: { action: 'Handle Click' }
+  }
 };
 
 const Template = (args) => {
@@ -22,8 +25,13 @@ const Template = (args) => {
 };
 
 export const Green = Template.bind({});
-
 Green.args = {
   buttonText: 'Hello',
   backgroundColor: 'purple'
+};
+
+export const Red = Template.bind({});
+Red.args = {
+  buttonText: 'Red btn',
+  backgroundColor: 'red'
 };

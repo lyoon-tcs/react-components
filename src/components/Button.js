@@ -19,11 +19,12 @@ import styles from './Button.module.css';
  * @param {string} props.backgroundColor - the button's background color
  * @return {jsx} - the Button component to render
  */
-const Button = ({ buttonText, backgroundColor }) => {
+const Button = ({ buttonText, backgroundColor, handleClick }) => {
   return (
     <button
       className={styles.button}
       style={{ backgroundColor: backgroundColor }}
+      onClick={handleClick}
     >
       {buttonText}
     </button>
@@ -32,7 +33,8 @@ const Button = ({ buttonText, backgroundColor }) => {
 
 Button.propTypes = {
   buttonText: PropTypes.string,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
+  handleClick: PropTypes.func
 };
 
 export default Button;
