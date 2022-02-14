@@ -10,7 +10,7 @@
 // dependencies
 import React from 'react';
 // local files
-import Header from '../components/Button';
+import Header from '../components/Header';
 
 export default {
   title: 'Components/Header',
@@ -19,4 +19,4 @@ export default {
 
 const Template = (args) => <Header {...args} />;
 
-export const Small = Template.bind({});
+export const asdf = Template.bind({});
