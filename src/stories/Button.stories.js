@@ -32,7 +32,7 @@ export const Green = Template.bind({});
 Green.args = {
   buttonText: 'Green',
   backgroundColor: 'green',
-  size: 'md'
+  size: 'sm'
 };
 
 export const Red = Template.bind({});
@@ -41,3 +41,5 @@ Red.args = {
   backgroundColor: 'red',
   size: 'sm'
 };
+
+export const Small = Template.bind({});
