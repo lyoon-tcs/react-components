@@ -30,8 +30,14 @@ const Template = (args) => {
   return <Header {...args} />;
 };
 
-export const SmallHeader = Template.bind({});
-SmallHeader.args = {
-  title: 'Default',
+export const LargeHeader = Template.bind({});
+LargeHeader.args = {
+  title: 'Small Header',
   heading: 'h1'
+};
+
+export const MediumHeader = Template.bind({});
+MediumHeader.args = {
+  title: 'Medium Header',
+  heading: 'h2'
 };
