@@ -30,8 +30,8 @@ const Template = (args) => {
   return <Header {...args} />;
 };
 
-export const FirstHeader = Template.bind({});
-FirstHeader.args = {
+export const SmallHeader = Template.bind({});
+SmallHeader.args = {
   title: 'Default',
   heading: 'h1'
 };

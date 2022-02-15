@@ -21,12 +21,24 @@ import styles from './Header.module.css';
  */
 const Header = ({ title = 'Title', heading = 'h1' }) => {
   if (heading === 'h1') {
-    return <h1 className={styles.header}>{title}</h1>;
+    return (
+      <h1 style={{ fontSize: '40px' }} className={styles.header}>
+        {title}
+      </h1>
+    );
   }
   if (heading === 'h2') {
-    return <h2 className={styles.header}>{title}</h2>;
+    return (
+      <h2 style={{ fontSize: '30px' }} className={styles.header}>
+        {title}
+      </h2>
+    );
   }
-  return <h3 className={styles.header}>{title}</h3>;
+  return (
+    <h3 style={{ fontSize: '20px' }} className={styles.header}>
+      {title}
+    </h3>
+  );
 };
 
 Header.propTypes = {
