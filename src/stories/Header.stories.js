@@ -13,12 +13,12 @@ import React from 'react';
 import Header from '../components/Header';
 
 export default {
-  title: 'Components/Header',
+  title: 'Components/Headers',
   component: Header,
   argTypes: {
-    anothaOne: {
+    heading: {
       control: { type: 'radio' },
-      options: [1, 2, 3]
+      options: ['h1', 'h2', 'h3']
     }
   }
 };
@@ -30,9 +30,8 @@ const Template = (args) => {
   return <Header {...args} />;
 };
 
-console.log('TEMPLATE', Template);
-
-export const firstHeader = Template.bind({});
-firstHeader.args = {
-  hmm: 'nothing'
+export const FirstHeader = Template.bind({});
+FirstHeader.args = {
+  title: 'Default',
+  heading: 'h1'
 };
