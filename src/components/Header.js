@@ -16,12 +16,18 @@ import PropTypes from 'prop-types';
  * @param {string} props.title - the header's text
  * @return {jsx} - the Header component to render
  */
-const Header = (props) => {
-  return <h1 className="Header">{props.title}</h1>;
+const Header = ({ title = 'MAIN', anothaOne = 2 }) => {
+  return (
+    <h1 className="Header">
+      {title}
+      <span style={{ paddingLeft: '20px' }}>{anothaOne}</span>
+    </h1>
+  );
 };
 
 Header.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  anothaOne: PropTypes.number
 };
 
 export default Header;

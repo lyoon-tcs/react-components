@@ -14,14 +14,25 @@ import Header from '../components/Header';
 
 export default {
   title: 'Components/Header',
-  component: Header
+  component: Header,
+  argTypes: {
+    anothaOne: {
+      control: { type: 'radio' },
+      options: [1, 2, 3]
+    }
+  }
 };
 
 // work on finding difference between adding a default header here, and default header in actual Header.js (in props).
 // Finish creating multiple instances, try out different props
 const Template = (args) => {
-  console.log(args);
+  console.log('ARGS:', args);
   return <Header {...args} />;
 };
 
-export const asdf = Template.bind({});
+console.log('TEMPLATE', Template);
+
+export const firstHeader = Template.bind({});
+firstHeader.args = {
+  hmm: 'nothing'
+};
