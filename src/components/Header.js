@@ -10,6 +10,8 @@
 // dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+// local files
+import styles from './Header.module.css';
 
 /**
  * @description - returns Header component
@@ -19,12 +21,12 @@ import PropTypes from 'prop-types';
  */
 const Header = ({ title = 'Title', heading = 'h1' }) => {
   if (heading === 'h1') {
-    return <h1 className="Header">{title}</h1>;
+    return <h1 className={styles.header}>{title}</h1>;
   }
   if (heading === 'h2') {
-    return <h2 className="Header">{title}</h2>;
+    return <h2 className={styles.header}>{title}</h2>;
   }
-  return <h3 className="Header">{title}</h3>;
+  return <h3 className={styles.header}>{title}</h3>;
 };
 
 Header.propTypes = {
