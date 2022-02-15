@@ -20,11 +20,11 @@ import PropTypes from 'prop-types';
 const Header = ({ title = 'Title', heading = 'h1' }) => {
   if (heading === 'h1') {
     return <h1 className="Header">{title}</h1>;
-  } else if (heading === 'h2') {
-    return <h2 className="Header">{title}</h2>;
-  } else {
-    return <h3 className="Header">{title}</h3>;
   }
+  if (heading === 'h2') {
+    return <h2 className="Header">{title}</h2>;
+  }
+  return <h3 className="Header">{title}</h3>;
 };
 
 Header.propTypes = {
