@@ -14,6 +14,7 @@ import PropTypes from 'prop-types';
 /**
  * @description - returns Header component
  * @param {string} props.title - the header's text
+ * @param {string} props.heading - the heading (options: h1, h2, h3)
  * @return {jsx} - the Header component to render
  */
 const Header = ({ title = 'Title', heading = 'h1' }) => {
