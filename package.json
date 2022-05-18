@@ -3,41 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-storyshots": "^6.4.18",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "jest-watch-typeahead": "^0.6.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start-storybook -p 6006 -s public",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "npx eslint --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
+    "lint:fix": "npx eslint --fix",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -55,15 +33,22 @@
     "@storybook/addon-actions": "^6.4.18",
     "@storybook/addon-essentials": "^6.4.18",
     "@storybook/addon-links": "^6.4.18",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-storyshots": "^6.4.18",
     "@storybook/builder-webpack5": "^6.4.18",
     "@storybook/manager-webpack5": "^6.4.18",
     "@storybook/node-logger": "^6.4.18",
-    "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.18",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "eslint": "^8.8.0",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-storybook": "^0.5.6",
+    "jest-watch-typeahead": "^1.0.0",
     "prettier": "^2.5.1",
     "react-test-renderer": "^17.0.2",
+    "storybook-css-modules-preset": "^1.1.1",
     "webpack": "^5.68.0"
   }
 }

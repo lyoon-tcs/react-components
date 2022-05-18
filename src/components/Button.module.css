@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  border-radius: 5px;
+}
+
+.sm {
+  padding: 0.4375em;
+}
+
+.md {
+  padding: 0.53125rem 0.5625rem;
+  font-size: 1.0625rem;
+}
+
+.lg {
+  padding: 0.625em 0.9375em;
+  font-size: 1.125rem;
+}

@@ -4,7 +4,13 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "react-app",
+    "react-app/jest",
+    "plugin:storybook/recommended"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,9 +27,34 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
   },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"
     }
   }
 }
+
+// "eslintConfig": {
+//   "extends": [
+//     "react-app",
+//     "react-app/jest"
+//   ],
+//   "overrides": [
+//     {
+//       "files": [
+//         "**/*.stories.*"
+//       ],
+//       "rules": {
+//         "import/no-anonymous-default-export": "off"
+//       }
+//     }
+//   ]
+// },

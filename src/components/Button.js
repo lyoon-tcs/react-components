@@ -10,18 +10,41 @@
 // dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+// local files
+import styles from './Button.module.css';
 
 /**
  * @description - returns Button component
  * @param {string} props.buttonText - the button's text
+ * @param {string} props.backgroundColor - the button's background color
+ * @param {string} props.color - the button's font color
+ * @param {string} props.size - the button's size (extra padding & font-size)
  * @return {jsx} - the Button component to render
  */
-const Button = (props) => {
-  return <button>{props.buttonText}</button>;
+const Button = ({
+  buttonText = 'HEY',
+  backgroundColor = 'green',
+  color = '#f2ff40',
+  size = 'sm',
+  handleClick
+}) => {
+  return (
+    <button
+      className={`${styles.button} ${styles[size]}`}
+      style={{ backgroundColor, color }}
+      onClick={handleClick}
+    >
+      {buttonText}
+    </button>
+  );
 };
 
 Button.propTypes = {
-  buttonText: PropTypes.string
+  buttonText: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  handleClick: PropTypes.func
 };
 
 export default Button;
