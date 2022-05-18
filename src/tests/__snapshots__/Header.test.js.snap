@@ -2,7 +2,12 @@
 
 exports[`Header Component renders correctly matches snapshot 1`] = `
 <h1
-  className="Header"
+  className="header"
+  style={
+    Object {
+      "fontSize": "40px",
+    }
+  }
 >
   Hello world
 </h1>

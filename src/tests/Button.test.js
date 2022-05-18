@@ -12,23 +12,23 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen, cleanup } from '@testing-library/react';
 // local files
-import Header from '../Header';
+import Button from '../lib/components/Button';
 
 afterEach(() => {
   cleanup();
 });
 
-describe('Header Component renders correctly', () => {
-  const headerTitle = 'Hello world';
+describe('Button Component renders correctly', () => {
+  const buttonText = 'hello world';
 
-  test('should render Header with proper text', () => {
-    render(<Header title={headerTitle} />);
-    const headingElement = screen.getByText(headerTitle);
-    expect(headingElement).toBeInTheDocument();
+  test('should render button with proper text', () => {
+    render(<Button buttonText={buttonText} />);
+    const buttonElement = screen.getByText(buttonText);
+    expect(buttonElement).toBeInTheDocument();
   });
 
   test('matches snapshot', () => {
-    const tree = renderer.create(<Header title={headerTitle} />).toJSON();
+    const tree = renderer.create(<Button buttonText={buttonText} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

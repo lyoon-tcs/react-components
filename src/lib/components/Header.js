@@ -11,7 +11,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // local files
-import styles from './Header.module.css';
+import styles from '../../css/Header.module.css';
 
 /**
  * @description - returns Header component

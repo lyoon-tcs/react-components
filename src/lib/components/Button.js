@@ -11,7 +11,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // local files
-import styles from './Button.module.css';
+import styles from '../../css/Button.module.css';
 
 /**
  * @description - returns Button component
