@@ -1,8 +1,16 @@
 {
   "name": "react-components",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyoon-tcs/react-components.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -10,7 +18,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "build-storybook": "build-storybook -s public",
     "eject": "react-scripts eject",
     "lint": "eslint .",
@@ -30,6 +38,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
     "@storybook/addon-actions": "^6.4.18",
     "@storybook/addon-essentials": "^6.4.18",
     "@storybook/addon-links": "^6.4.18",
