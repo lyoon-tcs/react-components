@@ -34,7 +34,7 @@ const Button = ({
       style={{ backgroundColor, color }}
       onClick={handleClick}
     >
-      {`${buttonText} second`}
+      {`${buttonText} v0.1.1`}
     </button>
   );
 };
