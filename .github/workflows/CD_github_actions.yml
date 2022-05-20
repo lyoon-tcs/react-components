@@ -23,8 +23,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      # - name: Fetch tags
-      #   run: git fetch --tags
+      - name: Fetch tags
+        run: git fetch --tags
 
       - name: Deploy
         env:
