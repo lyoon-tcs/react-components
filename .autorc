@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "git-tag"
+  ],
+  "owner": "lyoon-tcs",
+  "repo": "react-components",
+  "name": "lyoon-tcs",
+  "email": "lyoon@truechoice.io",
+  "onlyPublishWithReleaseLabel": true
+}

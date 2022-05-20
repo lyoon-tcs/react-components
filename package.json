@@ -1,5 +1,5 @@
 {
-  "name": "react-components",
+  "name": "@lyoon-tcs/react-components",
   "version": "0.1.0",
   "main": "dist/index.js",
   "repository": {
@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@auto-it/git-tag": "^10.36.5",
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12",
@@ -53,6 +54,7 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "auto": "^10.36.5",
     "eslint": "^8.8.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-storybook": "^0.5.6",
