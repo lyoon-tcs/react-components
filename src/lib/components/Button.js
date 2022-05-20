@@ -34,7 +34,7 @@ const Button = ({
       style={{ backgroundColor, color }}
       onClick={handleClick}
     >
-      {buttonText}
+      {`${buttonText} first`}
     </button>
   );
 };
