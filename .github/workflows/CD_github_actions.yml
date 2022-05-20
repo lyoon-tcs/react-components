@@ -26,8 +26,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      # - name: Deploy
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: npm run release
+      - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run release
