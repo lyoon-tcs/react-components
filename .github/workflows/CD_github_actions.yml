@@ -17,14 +17,14 @@ jobs:
           cache: 'npm'
           registry-url: 'https://npm.pkg.github.com'
 
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
       - name: Install
         run: npm install
 
       - name: Build
         run: npm run build
-
-      - name: Fetch tags
-        run: git fetch --tags
 
       - name: Deploy
         env:
