@@ -38,7 +38,6 @@
     ]
   },
   "devDependencies": {
-    "@auto-it/git-tag": "^10.36.5",
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12",
@@ -63,5 +62,12 @@
     "react-test-renderer": "^17.0.2",
     "storybook-css-modules-preset": "^1.1.1",
     "webpack": "^5.68.0"
+  },
+  "author": "lyoon-tcs <lyoon@truechoice.io>",
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
