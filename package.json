@@ -24,7 +24,7 @@
     "lint": "eslint .",
     "lint:fix": "npx eslint --fix",
     "test": "react-scripts test",
-    "release": "npx auto shipit --dry-run"
+    "release": "npx auto shipit"
   },
   "browserslist": {
     "production": [
