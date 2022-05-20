@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "npx eslint --fix",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "release": "npx auto shipit"
   },
   "browserslist": {
     "production": [
