@@ -1,3 +1,15 @@
+# v0.1.2 (Mon May 23 2022)
+
+#### 🐛 Bug Fix
+
+- chore: remove unshallow in fetching tags [#22](https://github.com/lyoon-tcs/react-components/pull/22) ([@lyoon-tcs](https://github.com/lyoon-tcs))
+
+#### Authors: 1
+
+- [@lyoon-tcs](https://github.com/lyoon-tcs)
+
+---
+
 # v0.1.1 (Fri May 20 2022)
 
 #### 🐛 Bug Fix
